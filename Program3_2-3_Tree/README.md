@@ -11,3 +11,6 @@ This program contains the following:
 - Custom-built String Class
 - Operator Overloading
 - Use of External .txt Files
+
+Will McIntosh
+5-15-20
