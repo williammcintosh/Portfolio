@@ -1,0 +1,3 @@
+Amazon Shipping Update|Email|https://mail.google.com/004|4-4-4|4:44|We've shipped your items in 'neglected class'|004
+Board of Trustees|Email|https://mail.pdx.edu/005|5-5-5|5:55|The board has chosen to make Stephen Percy President|005
+Late Assignment|Email|https://mail.pcc.edu/006|1-1-1|6:66|Man, you're gonna flunk. Your WR227 is late again cuz a CS202!|006
