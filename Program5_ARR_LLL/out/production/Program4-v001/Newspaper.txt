@@ -1,0 +1,45 @@
+FullTime
+Powell's Dishwasher
+Newspaper
+8
+8-8-88
+8:08pm
+88.08
+Washing dishes and cleaning tables.
+Health Insurance w/ Dental
+FullTime
+Starbucks Diesel Mechanic
+Newspaper
+4
+4-4-44
+4:44am
+44.44
+Repairing Starbucks' Big Rigs
+Comprehensive HMO
+Gig
+Unicycle Repairmen
+Newspaper
+12
+12-12-12
+12:12am
+1212.12
+Fix the Unipiper's Unicycle
+1212
+Gig
+Model-T AC Installer
+Newspaper
+2
+2-2-1
+2:22am
+22.22
+Adding AC to a 1927 model-T ford
+22
+FullTime
+San Diego Weatherman
+Newspaper
+6
+6-6-66
+6:66pm
+66.66
+Reporting the sunny weather in San Diego
+$50k in stock bond options
