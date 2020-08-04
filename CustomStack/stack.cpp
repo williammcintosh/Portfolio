@@ -49,20 +49,18 @@ int Stack::Size(Node *& top) {
 }
 
 int Stack::Top() {
-    if (top) return top->GetVal();
-    return 0;
+    if (!top) return 0;
+    return top->GetVal();
 }
 
 int Stack::Pop() {
-    if (top)
-    {
-        int myVal = top->GetVal();
-        Node * temp = top;
-        delete top;
-        top = temp;
-        return myVal;
-    }
-    return 0;
+    if (!top) return 0
+        
+    int myVal = top->GetVal();
+    Node * temp = top;
+    delete top;
+    top = temp;
+    return myVal;
 }
 
 int Stack::DeleteAll(Node *& top) {
