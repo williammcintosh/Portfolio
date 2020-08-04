@@ -18,13 +18,13 @@ class Stack {
         Stack();
         void Push(int val);
         int Size();
-        int Size(Node *& top);
         int Top();
         int Pop();
-        int DeleteAll(Node *& top);
         ~Stack();
     protected:
         Node * top;
+        int Size(Node *& top);
+        int DeleteAll(Node *& top);
 };
 
 Stack::Stack() : top(0) {}
