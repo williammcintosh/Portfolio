@@ -31,10 +31,12 @@ Stack::Stack() : top(0) {}
 
 void Stack::Push(int val) {
     Node * temp = new Node;
-    temp->SetNext(NULL);
     temp->SetVal(val);
     
-    if (top) temp->SetNext(top);
+    if (!top)
+        temp->SetNext(NULL);
+    else
+        temp->SetNext(top);
 
     top = temp;
 }
