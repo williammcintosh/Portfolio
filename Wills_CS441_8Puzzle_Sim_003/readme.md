@@ -1,5 +1,5 @@
 #Link to playable simulator
-http://bridgeworxgames.com/8_Puzzle-Sim/index.html/
+http://bridgeworxgames.com/8_Puzzle_Simulator/
 
 If I had unlimited time, I would discover why the same node it being revisited,
 triggering the break condition to prevent unlimited loops. Something within
