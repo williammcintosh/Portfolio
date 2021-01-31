@@ -8,6 +8,9 @@ counting misplaces tiles, summing the total of the manhattan distance from
 their current positions to the desired goal positions, or the Gashcnig's swaps.
 It builds a tree of nodes from it's current permutation to the desired goal position.
 
+The file named "SimManagerScript.cs" is responsible for building the tree.
+The file named "PuzzleNodeScript.cs" is the node of the tree.
+
 This assignment was for my CS441 course which is AI, but the assignment didn't
 require that the program be built in Unity, just that it be built. I wanted
 to make the data more visual.
