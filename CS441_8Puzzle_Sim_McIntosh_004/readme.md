@@ -1,6 +1,6 @@
 #8Puzzle Solver
 Here is a link to the playable simulator:
-http://bridgeworxgames.com/8puzzle/
+http://bridgeworxgames.com/8_puzzle/index.html
 
 This simulator isn't a brute force, yet instead uses best-first and A* search
 algorithms to solve the 8-puzzle. This uses three different heuristics,
