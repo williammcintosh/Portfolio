@@ -3,9 +3,10 @@ This is my listing of some my Computer Science programs through my time studying
 
 ## Links to my other repos
 
-Reinforcement Learning Model: ![RL Repo](https://github.com/williammcintosh/Robby_Cans)
+Reinforcement Learning Model:
 
-![RL Sim](http://bridgeworxgames.com/Robby_Cans/)
+[RL Repo](https://github.com/williammcintosh/Robby_Cans)
+[RL Sim](http://bridgeworxgames.com/Robby_Cans/)
 
 Data Structures Sim
 
