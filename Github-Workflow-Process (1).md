@@ -65,8 +65,7 @@ This example names branches by my initials `WMM/` + small_description_of_your_wo
    branch 'WMM/Update-Bio' set up to track 'origin/WMM/Update-Bio'.
    ```
    * Hold Command and click on the url inside `https://github.com/williammcintosh/CS510_CRR/pull/new/WMM/Update-Bio`
-7. Follow the prompts
-   * (This part to be updated later)
+7. Follow the prompts in the Github website. Add comments -> Create Pull Request. Merge Pull Request. Confirm Merge.
 
 
 # Pretty Print
