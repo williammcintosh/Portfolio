@@ -13,15 +13,14 @@ To make the repository private and give yourself access rights using an SSH key,
 
 This only needs to be done once per project.
 
-1. Download data from source
+1. Download data from source (provided by professor?)
 2. Open VS Code and navigate to the folder containing your code files.
     * Make sure this **is not** the parent folder, but instead only open the highest, loal working directory.
 3. Open the integrated terminal in VS Code by going to View -> Terminal or using the shortcut Ctrl+`.
-4. Initialize a new **local** repository by running the command `git init`.
-5. Next, create a new **remote** repository on GitHub. Go to the GitHub website, log in, and click on the "New" button to create a new repository. Give it a name and choose whether you want it to be public or private.
+5. Create a new **remote** repository on GitHub. Go to the GitHub website, log in, and click on the "New" button to create a new repository. Give it a name and choose whether you want it to be public or private.
 6. Once the repository is created, copy the SSH URL of the repository from the GitHub website.
 7. Run the command `git clone <SSH_URL> .`
-    * Alternatively `git clone <SSH_URL> <name_of_folder>`
+    * Alternatively `git clone <SSH_URL> <name_of_folder_defaults_to_repo_name>`
     * This requires you to have setup your SSH locally (See steps above)
 
 
@@ -29,12 +28,15 @@ This only needs to be done once per project.
 
 This example names branches by my initials `WMM/` + small_description_of_your_work_without_spaces. For example, `WMM/Update-Bio`. Also, between each step, be sure to run `git status` to know where your work is throughout the process.
 
-1. create and name a branch `git checkout -b WMM/Update-Bio`
-2. Perform work on the actual code and files, or add images.
-3. Move files: Working Directory $\rightarrow$ Staging Area `git add .`
-4. Move files: Staging Area $\rightarrow$ Local Repo  `git commit -m "did some stuff"`
-5. Move files: Local Repo $\rightarrow$ Remote Repo  `git push`
-   a. This will actually fail like this:
+1. Create and name a branch `git checkout -b WMM/Update-Bio`
+   * This creates a branch **based on the current branch**.
+3. Perform work on the actual code and files, or add images.
+4. Update Git Tracking: Working Directory $\rightarrow$ Staging Area `git add .`
+5. Update Git Tracking: Staging Area $\rightarrow$ Local Repo  `git commit -m "did some stuff"`
+   * Commit is saying that you are putting this list of changes into the current branch, and that branch will now have a commit SHA that points to those changes.
+7. Update Git Tracking: Local Repo $\rightarrow$ Remote Repo  `git push`
+
+   * This will actually fail like this:
    ```
    ⦻ (base) willmcintosh@Wills-MacBook-Pro hw1 % git push 
     fatal: The current branch WMM/Update-Bio has no upstream branch.
@@ -45,7 +47,7 @@ This example names branches by my initials `WMM/` + small_description_of_your_wo
     To have this happen automatically for branches without a tracking
     upstream, see 'push.autoSetupRemote' in 'git help config'.
    ```
-   b. bopy this line of code and run command `git push --set-upstream origin WMM/Update-Bio`
+   * Copy this line of code and run command `git push --set-upstream origin WMM/Update-Bio`
 8. This will out put the lines below:
 ```
 (base) willmcintosh@Wills-MacBook-Pro calculator-main % git push --set-upstream origin WMM/Update-Bio
