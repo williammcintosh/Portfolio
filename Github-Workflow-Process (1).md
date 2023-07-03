@@ -17,9 +17,9 @@ This only needs to be done once per project.
 2. Open VS Code and navigate to the folder containing your code files.
     * Make sure this **is not** the parent folder, but instead only open the highest, loal working directory.
 3. Open the integrated terminal in VS Code by going to View -> Terminal or using the shortcut Ctrl+`.
-5. Create a new **remote** repository on GitHub. Go to the GitHub website, log in, and click on the "New" button to create a new repository. Give it a name and choose whether you want it to be public or private.
-6. Once the repository is created, copy the SSH URL of the repository from the GitHub website.
-7. Run the command `git clone <SSH_URL> .`
+4. Create a new **remote** repository on GitHub. Go to the GitHub website, log in, and click on the "New" button to create a new repository. Give it a name and choose whether you want it to be public or private.
+5. Once the repository is created, copy the SSH URL of the repository from the GitHub website.
+6. Run the command `git clone <SSH_URL> .`
     * Alternatively `git clone <SSH_URL> <name_of_folder_defaults_to_repo_name>`
     * This requires you to have setup your SSH locally (See steps above)
 
@@ -30,11 +30,11 @@ This example names branches by my initials `WMM/` + small_description_of_your_wo
 
 1. Create and name a branch `git checkout -b WMM/Update-Bio`
    * This creates a branch **based on the current branch**.
-3. Perform work on the actual code and files, or add images.
-4. Update Git Tracking: Working Directory $\rightarrow$ Staging Area `git add .`
-5. Update Git Tracking: Staging Area $\rightarrow$ Local Repo  `git commit -m "did some stuff"`
+2. Perform work on the actual code and files, or add images.
+3. Update Git Tracking: Working Directory $\rightarrow$ Staging Area `git add .`
+4. Update Git Tracking: Staging Area $\rightarrow$ Local Repo  `git commit -m "did some stuff"`
    * Commit is saying that you are putting this list of changes into the current branch, and that branch will now have a commit SHA that points to those changes.
-7. Update Git Tracking: Local Repo $\rightarrow$ Remote Repo  `git push`
+5. Update Git Tracking: Local Repo $\rightarrow$ Remote Repo  `git push`
 
    * This will actually fail like this:
    ```
@@ -48,7 +48,7 @@ This example names branches by my initials `WMM/` + small_description_of_your_wo
     upstream, see 'push.autoSetupRemote' in 'git help config'.
    ```
    * Copy this line of code and run command `git push --set-upstream origin WMM/Update-Bio`
-8. This will out put the lines below:
+6. This will out put the lines below:
 ```
 (base) willmcintosh@Wills-MacBook-Pro calculator-main % git push --set-upstream origin WMM/Update-Bio
 Enumerating objects: 21, done.
@@ -66,7 +66,7 @@ To github.com:williammcintosh/CS510_CRR.git
 branch 'WMM/Update-Bio' set up to track 'origin/WMM/Update-Bio'.
 ```
   * Hold Command and click on the url inside `https://github.com/williammcintosh/CS510_CRR/pull/new/WMM/Update-Bio`
-9. Follow the prompts
+7. Follow the prompts
   * (This part to be updated later)
 
 
