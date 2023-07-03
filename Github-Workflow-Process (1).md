@@ -6,7 +6,6 @@ To make the repository private and give yourself access rights using an SSH key,
 1. Generate an SSH key pair if you haven't already. You can do this by running the command `ssh-keygen` in the terminal. Follow the prompts to generate the key pair.
 2. Add the SSH key to your GitHub account. Go to the GitHub website, log in, and navigate to your account settings. Under "SSH and GPG keys", click on "New SSH key" and paste the contents of your public key file (~/.ssh/id_rsa.pub).
 3. In the terminal, change the remote URL to use SSH instead of HTTPS by running the command `git remote set-url origin <SSH_URL>`. Replace `<SSH_URL>` with the SSH URL of your repository.
-4. Now, you can push your code to the remote repository using SSH by running the command `git push -u origin main`.
 
 
 # Setup Github w/ Project:
