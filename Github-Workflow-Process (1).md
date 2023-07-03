@@ -65,9 +65,9 @@ This example names branches by my initials `WMM/` + small_description_of_your_wo
     * [new branch]      WMM/Update-Bio -> WMM/Update-Bion
    branch 'WMM/Update-Bio' set up to track 'origin/WMM/Update-Bio'.
    ```
-  * Hold Command and click on the url inside `https://github.com/williammcintosh/CS510_CRR/pull/new/WMM/Update-Bio`
+   * Hold Command and click on the url inside `https://github.com/williammcintosh/CS510_CRR/pull/new/WMM/Update-Bio`
 7. Follow the prompts
-  * (This part to be updated later)
+   * (This part to be updated later)
 
 
 # Pretty Print
@@ -76,12 +76,12 @@ To make the graph pretty, edit the .gitconfig file on your device:
 
 1. Run the command `vim ~/.gitconfig`
 2. Add the following lines at the bottom:
-   * ```
+   ```
      [alias]
         lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all
         lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
         lg = lg1
-     ```
+    ```
 3. Save the file.
 4. When you want to print the graph run one of the following commands:
     * `git lg`
