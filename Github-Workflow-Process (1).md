@@ -27,13 +27,14 @@ This only needs to be done once per project.
 
 This example names branches by my initials `WMM/` + small_description_of_your_work_without_spaces. For example, `WMM/Update-Bio`. Also, between each step, be sure to run `git status` to know where your work is throughout the process.
 
-1. Create and name a branch `git checkout -b WMM/Update-Bio`
+1. Make sure you're on the `main` branch and there aren't any unresolved branches, `git branch`.
+2. Create and name a branch `git checkout -b WMM/Update-Bio`
    * This creates a branch **based on the current branch**.
-2. Perform work on the actual code and files, or add images.
-3. Update Git Tracking: Working Directory $\rightarrow$ Staging Area `git add .`
-4. Update Git Tracking: Staging Area $\rightarrow$ Local Repo  `git commit -m "did some stuff"`
+3. Perform work on the actual code and files, or add images.
+4. Update Git Tracking: Working Directory $\rightarrow$ Staging Area `git add .`
+5. Update Git Tracking: Staging Area $\rightarrow$ Local Repo  `git commit -m "did some stuff"`
    * Commit is saying that you are putting this list of changes into the current branch, and that branch will now have a commit SHA that points to those changes.
-5. Update Git Tracking: Local Repo $\rightarrow$ Remote Repo  `git push`
+6. Update Git Tracking: Local Repo $\rightarrow$ Remote Repo  `git push`
 
    * This will actually fail like this:
    ```
@@ -47,7 +48,7 @@ This example names branches by my initials `WMM/` + small_description_of_your_wo
     upstream, see 'push.autoSetupRemote' in 'git help config'.
    ```
    * Copy this line of code and run command `git push --set-upstream origin WMM/Update-Bio`
-6. This will out put the lines below:
+7. This will out put the lines below:
    ```
    (base) willmcintosh@Wills-MacBook-Pro calculator-main % git push --set-upstream origin WMM/Update-Bio
    Enumerating objects: 21, done.
@@ -65,8 +66,8 @@ This example names branches by my initials `WMM/` + small_description_of_your_wo
    branch 'WMM/Update-Bio' set up to track 'origin/WMM/Update-Bio'.
    ```
    * Hold Command and click on the url inside `https://github.com/williammcintosh/CS510_CRR/pull/new/WMM/Update-Bio`
-7. Follow the prompts in the Github website. Add comments -> Create Pull Request. Merge Pull Request. Confirm Merge.
-8. Update local repo by running this command `git checkout main; git fetch --all; git pull`.
+8. Follow the prompts in the Github website. Add comments -> Create Pull Request. Merge Pull Request. Confirm Merge.
+9. Update local repo by running this command `git checkout main; git fetch --all; git pull`.
 
 Also, did you accidentally finish all the steps above and later realized that you missed something in that branch? Amend to the rescue!
 
