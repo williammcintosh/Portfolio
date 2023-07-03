@@ -66,6 +66,13 @@ This example names branches by my initials `WMM/` + small_description_of_your_wo
    ```
    * Hold Command and click on the url inside `https://github.com/williammcintosh/CS510_CRR/pull/new/WMM/Update-Bio`
 7. Follow the prompts in the Github website. Add comments -> Create Pull Request. Merge Pull Request. Confirm Merge.
+8. Update local repo by running this command `git checkout main; git fetch --all; git pull`.
+
+Also, did you accidentally finish all the steps above and later realized that you missed something in that branch? Amend to the rescue!
+
+1. Do your work on the code / file management.
+2. Run the command `git commit --amend`.
+3. Force push the new changes `git push -f`.
 
 
 # Pretty Print
