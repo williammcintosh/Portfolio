@@ -49,22 +49,22 @@ This example names branches by my initials `WMM/` + small_description_of_your_wo
    ```
    * Copy this line of code and run command `git push --set-upstream origin WMM/Update-Bio`
 6. This will out put the lines below:
-```
-(base) willmcintosh@Wills-MacBook-Pro calculator-main % git push --set-upstream origin WMM/Update-Bio
-Enumerating objects: 21, done.
-Counting objects: 100% (21/21), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (17/17), done.
-Writing objects: 100% (20/20), 8.13 KiB | 489.00 KiB/s, done.
-Total 20 (delta 0), reused 0 (delta 0), pack-reused 0
-remote: 
-remote: Create a pull request for 'WMM/Update-Bio' on GitHub by visiting:
-remote:      https://github.com/williammcintosh/CS510_CRR/pull/new/WMM/Update-Bio
-remote: 
-To github.com:williammcintosh/CS510_CRR.git
- * [new branch]      WMM/Update-Bio -> WMM/Update-Bion
-branch 'WMM/Update-Bio' set up to track 'origin/WMM/Update-Bio'.
-```
+   ```
+   (base) willmcintosh@Wills-MacBook-Pro calculator-main % git push --set-upstream origin WMM/Update-Bio
+   Enumerating objects: 21, done.
+   Counting objects: 100% (21/21), done.
+   Delta compression using up to 8 threads
+   Compressing objects: 100% (17/17), done.
+   Writing objects: 100% (20/20), 8.13 KiB | 489.00 KiB/s, done.
+   Total 20 (delta 0), reused 0 (delta 0), pack-reused 0
+   remote: 
+   remote: Create a pull request for 'WMM/Update-Bio' on GitHub by visiting:
+   remote:      https://github.com/williammcintosh/CS510_CRR/pull/new/WMM/Update-Bio
+   remote: 
+   To github.com:williammcintosh/CS510_CRR.git
+    * [new branch]      WMM/Update-Bio -> WMM/Update-Bion
+   branch 'WMM/Update-Bio' set up to track 'origin/WMM/Update-Bio'.
+   ```
   * Hold Command and click on the url inside `https://github.com/williammcintosh/CS510_CRR/pull/new/WMM/Update-Bio`
 7. Follow the prompts
   * (This part to be updated later)
