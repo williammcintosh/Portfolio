@@ -75,6 +75,12 @@ Also, did you accidentally finish all the steps above and later realized that yo
 2. Run the command `git commit --amend`.
 3. Force push the new changes `git push -f`.
 
+Are your local files not updating to the most recent commit?
+
+`git resotre .`
+or
+`git resore <name_of_file_to_restore>`
+
 
 # Pretty Print
 
