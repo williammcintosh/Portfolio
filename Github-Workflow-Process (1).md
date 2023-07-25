@@ -7,6 +7,9 @@ To make the repository private and give yourself access rights using an SSH key,
 2. Add the SSH key to your GitHub account. Go to the GitHub website, log in, and navigate to your account settings. Under "SSH and GPG keys", click on "New SSH key" and paste the contents of your public key file (~/.ssh/id_rsa.pub).
 3. In the terminal, change the remote URL to use SSH instead of HTTPS by running the command `git remote set-url origin <SSH_URL>`. Replace `<SSH_URL>` with the SSH URL of your repository.
 
+To set the upstream from the class' remote repo you cloned to your new remote repo, run this command:
+`git remote set-url origin https://github.com/williammcintosh/CS510_RWD_HW2.git`
+
 
 # Setup Github w/ Project:
 
