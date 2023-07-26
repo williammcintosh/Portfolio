@@ -15,15 +15,13 @@ To set the upstream from the class' remote repo you cloned to your new remote re
 
 This only needs to be done once per project.
 
-1. Download data from source (provided by professor?)
-2. Open VS Code and navigate to the folder containing your code files.
-    * Make sure this **is not** the parent folder, but instead only open the highest, loal working directory.
-3. Open the integrated terminal in VS Code by going to View -> Terminal or using the shortcut Ctrl+`.
-4. Create a new **remote** repository on GitHub. Go to the GitHub website, log in, and click on the "New" button to create a new repository. Give it a name and choose whether you want it to be public or private.
-5. Once the repository is created, copy the SSH URL of the repository from the GitHub website.
-6. Run the command `git clone <SSH_URL> .`
+1. Create a new **remote** repository on GitHub. Go to the GitHub website, log in, and click on the "New" button to create a new repository. Give it a name and choose whether you want it to be public or private.
+1. Clone the repo to a local machine, Run the command `git clone <SSH_URL> .`
     * Alternatively `git clone <SSH_URL> <name_of_folder_defaults_to_repo_name>`
-    * This requires you to have setup your SSH locally (See steps above)
+1. Once the repository is created, copy the SSH URL of the repository from the GitHub website.
+1. Download zip file (provided by professor?)
+1. Extract contents to local repo directory
+1. Commit and push
 
 
 # Github Workflow
