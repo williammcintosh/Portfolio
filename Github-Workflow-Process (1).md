@@ -32,10 +32,13 @@ This example names branches by my initials `WMM/` + small_description_of_your_wo
 2. Create and name a branch `git checkout -b WMM/Update-Bio`
    * This creates a branch **based on the current branch**.
 3. Perform work on the actual code and files, or add images.
-4. Update Git Tracking: Working Directory $\rightarrow$ Staging Area `git add .`
-5. Update Git Tracking: Staging Area $\rightarrow$ Local Repo  `git commit -m "did some stuff"`
+4. Update Git Tracking: Working Directory $\rightarrow$ Staging Area
+   ```git add .```
+6. Update Git Tracking: Staging Area $\rightarrow$ Local Repo
+   ```git commit -m "did some stuff"```
    * Commit is saying that you are putting this list of changes into the current branch, and that branch will now have a commit SHA that points to those changes.
-6. Update Git Tracking: Local Repo $\rightarrow$ Remote Repo  `git push`
+7. Update Git Tracking: Local Repo $\rightarrow$ Remote Repo
+   ```git push```
 
    * This will actually fail like this:
    ```
@@ -48,8 +51,9 @@ This example names branches by my initials `WMM/` + small_description_of_your_wo
     To have this happen automatically for branches without a tracking
     upstream, see 'push.autoSetupRemote' in 'git help config'.
    ```
-   * Copy this line of code and run command `git push --set-upstream origin WMM/Update-Bio`
-7. This will out put the lines below:
+   * Copy this line of code and run command
+   ```git push --set-upstream origin WMM/Update-Bio```
+8. This will out put the lines below:
    ```
    (base) willmcintosh@Wills-MacBook-Pro calculator-main % git push --set-upstream origin WMM/Update-Bio
    Enumerating objects: 21, done.
@@ -67,37 +71,41 @@ This example names branches by my initials `WMM/` + small_description_of_your_wo
    branch 'WMM/Update-Bio' set up to track 'origin/WMM/Update-Bio'.
    ```
    * Hold Command and click on the url inside `https://github.com/williammcintosh/CS510_CRR/pull/new/WMM/Update-Bio`
-8. Follow the prompts in the Github website. Add comments -> Create Pull Request. Merge Pull Request. Confirm Merge.
-9. Update local repo by running this command `git checkout main; git fetch --all; git pull`.
+9. Follow the prompts in the Github website. Add comments -> Create Pull Request. Merge Pull Request. Confirm Merge.
+10. Update local repo by running this command:
+   ```git checkout main; git fetch --all; git pull```
 
 Also, did you accidentally finish all the steps above and later realized that you missed something in that branch? Amend to the rescue!
 
 1. Do your work on the code / file management.
-2. Run the command `git commit --amend`.
-3. Force push the new changes `git push -f`.
+2. Run the command
+   ```git commit --amend````
+4. Force push the new changes
+   ```git push -f```
 
 Are your local files not updating to the most recent commit?
 
-`git resotre .`
+```git resotre .```
 or
-`git resore <name_of_file_to_restore>`
+```git resore <name_of_file_to_restore>```
 
 
 # Pretty Print
 
 To make the graph pretty, edit the .gitconfig file on your device:
 
-1. Run the command `vim ~/.gitconfig`
-2. Add the following lines at the bottom:
+1. Run the command
+   ```vim ~/.gitconfig```
+3. Add the following lines at the bottom:
    ```
      [alias]
         lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all
         lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
         lg = lg1
     ```
-3. Save the file.
-4. When you want to print the graph run one of the following commands:
-    * `git lg`
-    * `git lg1`
-    * `git lg2` $\leftarrow$ my personal favorite
+4. Save the file.
+5. When you want to print the graph run one of the following commands:
+    * ```git lg```
+    * ```git lg1```
+    * ```git lg2``` $\leftarrow$ my personal favorite
   
