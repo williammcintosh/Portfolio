@@ -89,6 +89,47 @@ Are your local files not updating to the most recent commit?
 or
 ```git resore <name_of_file_to_restore>```
 
+# Swuashing Commits
+
+1. `git add .`
+2. `git commit -m "updated stuff"`
+3. `git rebase -i HEAD~3`
+   * Where the `~3` are the number of commits you want to squash.
+   * This will bring up a page:
+   ```
+     1 pick 2deae86 converted txt files to json
+     2 pick a6f6030 Updated rough draft json assets
+     3 pick cbebea8 deleted unwanted files                                                                                     
+     4 
+     5 # Rebase cdfd14d..cbebea8 onto cdfd14d (3 commands)
+     6 #
+     7 # Commands:
+     8 # p, pick <commit> = use commit
+     9 # r, reword <commit> = use commit, but edit the commit message
+    10 # e, edit <commit> = use commit, but stop for amending
+    11 # s, squash <commit> = use commit, but meld into previous commit
+    12 # f, fixup [-C | -c] <commit> = like "squash" but keep only the previous
+   .git/rebase-merge/git-rebase-todo [+]                                                                       3,7            Top
+   -- INSERT --
+   ```
+4. Update the phrases `pick` to `squash` but leave the first one:
+   ```
+     1 pick 2deae86 converted txt files to json
+     2 **squash** a6f6030 Updated rough draft json assets
+     3 **squash** cbebea8 deleted unwanted files                                                                                     
+     4 
+     5 # Rebase cdfd14d..cbebea8 onto cdfd14d (3 commands)
+     6 #
+     7 # Commands:
+     8 # p, pick <commit> = use commit
+     9 # r, reword <commit> = use commit, but edit the commit message
+    10 # e, edit <commit> = use commit, but stop for amending
+    11 # s, squash <commit> = use commit, but meld into previous commit
+    12 # f, fixup [-C | -c] <commit> = like "squash" but keep only the previous
+   .git/rebase-merge/git-rebase-todo [+]                                                                       3,7            Top
+   -- INSERT --
+   ```
+
 # Updating Existing Commit
 
 Do this process when you already committed something, and you need to update it.
