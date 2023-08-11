@@ -96,7 +96,7 @@ or
 3. `git rebase -i HEAD~3`
    * Where the `~3` are the number of commits you want to squash.
    * This will bring up a page:
-   ```
+   ```git
      1 pick 2deae86 converted txt files to json
      2 pick a6f6030 Updated rough draft json assets
      3 pick cbebea8 deleted unwanted files                                                                                     
@@ -113,7 +113,7 @@ or
    -- INSERT --
    ```
 4. Update the phrases `pick` to `squash` but leave the first one:
-   ```
+   ```git
      1 pick 2deae86 converted txt files to json
      2 squash a6f6030 Updated rough draft json assets
      3 squash cbebea8 deleted unwanted files                                                                                     
