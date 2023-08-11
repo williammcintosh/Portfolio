@@ -89,7 +89,7 @@ Are your local files not updating to the most recent commit?
 or
 ```git resore <name_of_file_to_restore>```
 
-# Swuashing Commits
+# Squashing Commits
 
 1. `git add .`
 2. `git commit -m "updated stuff"`
@@ -129,6 +129,26 @@ or
    .git/rebase-merge/git-rebase-todo [+]                                                                       3,7            Top
    -- INSERT --
    ```
+5. `:wqa`
+6. This will bring up messages on each commit:
+   ```
+     1 # This is a combination of 3 commits.                                                                                     
+     2 # This is the 1st commit message:
+     3 
+     4 converted txt files to json
+     5 
+     6 # This is the commit message #2:
+     7 
+     8 Updated rough draft json assets
+     9 
+    10 # This is the commit message #3:
+    11 
+    12 deleted unwanted files
+   .git/COMMIT_EDITMSG                                                                                         1,1            Top
+   ```
+7. `:wqa`
+8. Push the code with the `-f` flag:
+   ```git push -f```
 
 # Updating Existing Commit
 
