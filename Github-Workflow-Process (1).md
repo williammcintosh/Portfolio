@@ -115,8 +115,8 @@ or
 4. Update the phrases `pick` to `squash` but leave the first one:
    ```
      1 pick 2deae86 converted txt files to json
-     2 **squash** a6f6030 Updated rough draft json assets
-     3 **squash** cbebea8 deleted unwanted files                                                                                     
+     2 squash a6f6030 Updated rough draft json assets
+     3 squash cbebea8 deleted unwanted files                                                                                     
      4 
      5 # Rebase cdfd14d..cbebea8 onto cdfd14d (3 commands)
      6 #
