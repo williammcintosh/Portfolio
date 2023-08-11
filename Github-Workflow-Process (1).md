@@ -89,6 +89,13 @@ Are your local files not updating to the most recent commit?
 or
 ```git resore <name_of_file_to_restore>```
 
+# Updating Existing Commit
+
+Do this process when you already committed something, and you need to update it.
+
+1. `git add <file_name>`
+2. `git commit --amend`
+3. `git push -f`
 
 # Pretty Print
 
