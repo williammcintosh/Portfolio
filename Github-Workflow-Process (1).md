@@ -91,6 +91,8 @@ or
 
 # Squashing Commits
 
+Rebasing is preferred over resetting because rebasing can be undone.
+
 1. `git add .`
 2. `git commit -m "updated stuff"`
 3. `git rebase -i HEAD~3`
@@ -112,7 +114,7 @@ or
    .git/rebase-merge/git-rebase-todo [+]                                                                       3,7            Top
    -- INSERT --
    ```
-4. Update the phrases `pick` to `squash` but leave the first one:
+4. Update the user input phrases `pick` to `squash` but leave the first one:
    ```git
      1 pick 2deae86 converted txt files to json
      2 squash a6f6030 Updated rough draft json assets
