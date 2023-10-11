@@ -10,6 +10,7 @@ To make the repository private and give yourself access rights using an SSH key,
 To set the upstream from the class' remote repo you cloned to your new remote repo, run this command:
 `git remote set-url origin https://github.com/williammcintosh/CS510_RWD_HW2.git`
 
+![Git Workflow](https://drive.google.com/uc?export=view&id=1ZffudW2rHXFo_wE4lp312KrPwZpo16Vd)
 
 # Setup Github w/ Project:
 
