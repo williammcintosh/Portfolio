@@ -12,6 +12,8 @@ To set the upstream from the class' remote repo you cloned to your new remote re
 
 ![Git Workflow](https://drive.google.com/uc?export=view&id=1ZffudW2rHXFo_wE4lp312KrPwZpo16Vd)
 
+<img src="https://drive.google.com/uc?export=view&id=1ZffudW2rHXFo_wE4lp312KrPwZpo16Vd" alt="Image Description" width="50%">
+
 # Setup Github w/ Project:
 
 This only needs to be done once per project.
