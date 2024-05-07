@@ -82,7 +82,7 @@ Also, did you accidentally finish all the steps above and later realized that yo
 
 1. Do your work on the code / file management.
 2. Run the command
-   ```git commit --amend````
+   ```git commit --amend```
 4. Force push the new changes
    ```git push -f```
 
